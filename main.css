@@ -1,0 +1,220 @@
+/* Common */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header,
+main,
+section,
+div {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  color: #2d3c49;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: #7d97ad solid medium;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 20%;
+  padding: 10px;
+}
+
+.header-text {
+  width: 80%;
+}
+
+.header-text h1,
+.header-text h2 {
+  margin-right: 10px;
+  text-align: right;
+  right: 0;
+  width: 100%;
+}
+
+.header-text h1 {
+  margin-top: 5px;
+}
+
+.header-text h2 {
+  margin-top: 15px;
+}
+
+/* Picture */
+
+.picture {
+  margin-top: 10px;
+}
+
+/* Projects */
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-section {
+  text-align: center;
+}
+
+.project-heading h4 {
+  margin: 0;
+  padding: 0;
+  color: #7d97ad;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+.project-heading {
+  width: 100%;
+}
+
+.project h5 {
+  padding: 10px;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #2d3c49;
+}
+
+.project-text p {
+  padding: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 450px) and (max-width: 799px) {
+  .project-image,
+  .project-text {
+    width: 50%;
+    text-align: left;
+    margin: auto 0;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .project {
+    width: 33.333333%;
+  }
+
+  .project-text {
+    height: 10em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  header {
+    height: 70px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .header-text h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+  }
+
+  .header-text h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+  }
+
+  .project h5 {
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    max-height: 50px;
+  }
+
+  .header-text {
+    width: 70%;
+  }
+
+  .header {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  header img {
+    height: 80px;
+  }
+}
